@@ -1,4 +1,4 @@
-package StreamAPI;
+package EmployeeQuestions;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,14 +27,15 @@ public class Employee {
     double getSalary(){
         return salary;
     }
-    List<Employee> employees = Arrays.asList(
-            new Employee(1, "Anil", "IT", 55000),
-            new Employee(2, "Bob", "HR", 42000),
-            new Employee(3, "Amit", "IT", 72000),
-            new Employee(4, "Rakesh", "Finance", 65000),
-            new Employee(5, "Ankit", "HR", 39000),
-            new Employee(6, "Sam", "Finance", 81000)
-    );
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", department='" + department + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
 
